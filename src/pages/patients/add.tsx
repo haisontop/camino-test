@@ -1,7 +1,7 @@
 import React from 'react'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 
-const addpatient = () => {
+const AddPatient = () => {
   return (
     <div className='w-screen h-screen flex flex-col justify-between pb-36 px-20'>
         <div></div>
@@ -18,4 +18,4 @@ const addpatient = () => {
   )
 }
 
-export default addpatient
+export default AddPatient

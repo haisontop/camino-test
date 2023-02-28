@@ -1,17 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { BsArrowDown, BsChevronLeft } from "react-icons/bs";
 
-const assesmentreport = () => {
+const AssesmentReport = () => {
+  const router = useRouter();
+
   return (
     <div className="pb-[125px]">
       <div className="bg-primary-600">
         <div className="px-[29px] py-[30px] flex items-center justify-between bg-primary-600">
-          <div>
+          <Link href={`/patients/${router.query.id}`}>
             <div className="flex items-center gap-3 text-[20px] font-bold text-white">
               <BsChevronLeft /> Profile
             </div>
-          </div>
+          </Link>
           <div>
             <button className="bg-[#FA7961] px-[20px] py-3 text-xl rounded-md text-white">
               Report: 12 January 2023
@@ -185,4 +189,4 @@ const assesmentreport = () => {
   );
 };
 
-export default assesmentreport;
+export default AssesmentReport;
