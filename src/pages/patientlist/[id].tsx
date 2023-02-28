@@ -36,7 +36,7 @@ const profile = () => {
   return (
     <div>
       <div className="flex bg-white justify-between px-[29px] py-[18px] border-b border-primary-100">
-        <div className="flex items-center gap-3 text-[20px] font-bold text-primary-600">
+        <div onClick={()=>router.push("/patientlist")} className="flex items-center gap-3 text-[20px] font-bold text-primary-600">
           <BsChevronLeft /> Patient List
         </div>
         <div className="relative w-[172px] h-[63px]">
