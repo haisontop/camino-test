@@ -64,17 +64,17 @@ const options = {
       datalabels: {
         align: "end",
         anchor: "end",
-        color: function (context) {
+        color: function (context: any) {
           return context.dataset.backgroundColor;
         },
-        font: function (context) {
+        font: function (context: any) {
           var w = context.chart.width;
           return {
             size: w < 512 ? 12 : 14,
             weight: "bold",
           };
         },
-        formatter: function (value, context) {
+        formatter: function (value: any, context: any) {
           return context.chart.data.labels[context.dataIndex];
         },
       },
