@@ -83,5 +83,6 @@ const options = {
 };
 
 export default function VerticalChart() {
+  //@ts-ignore
   return <Bar data={data} plugins={[ChartDataLabels]} options={options} />;
 }
