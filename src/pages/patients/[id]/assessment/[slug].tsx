@@ -1,3 +1,4 @@
+import VerticalChart from "@/components/charts/VerticalChart";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -135,6 +136,7 @@ const AssesmentReport = () => {
               <div className="flex flex-col justify-end">
                 <div className="w-[100px] relative h-[60px]">
                   <Image src="/utils/image/chart1.png" alt="char" fill />
+                  {/* <VerticalChart /> */}
                 </div>
                 <p className="text-base mt-4">Trend</p>
               </div>
